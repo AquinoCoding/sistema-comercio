@@ -3,6 +3,10 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 
+// Config de Porta e HostDocker
+const PORT = 3000;
+const HOST = '0.0.0.0';
+
 // Chamada de Rotas
 var rotaLogin = require('./routes/login');
 
@@ -29,7 +33,7 @@ app.use('/login', rotaLogin);
 
 
 
-app.listen(3000, () =>
+app.listen(PORT,HOST, () =>
     console.log('Serve in run time in 3000')
 );
 
