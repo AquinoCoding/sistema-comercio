@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', async(req, res) =>{
-    res.send('login buniti');
+router.get('/', function(req, res){
+    res.render('login');
 })
 
 
