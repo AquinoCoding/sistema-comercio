@@ -1,0 +1,12 @@
+# Config basicas para o Docker-Compose
+#     Para refletir alterações
+
+version: "3"
+services: 
+  crud:
+    build: .
+    command: npm start
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/app
