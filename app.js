@@ -8,7 +8,7 @@ const logger = require('morgan');
 
 // Chamada de Rotas
 const rotaLogin = require('./routes/login');
-
+const rotaCadastro = require('./routes/cadastro');
 
 // Constante de uso EXPRESS
 const app = express();
@@ -28,6 +28,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Definição de Endereços de ROTAS
 app.use('/login', rotaLogin);
+app.use('/auth', rotaCadastro);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
