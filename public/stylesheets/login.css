@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root {
-    --primary-color: rgb(96, 81, 114);
-    --primary-color-dark: rgb(96, 84, 114);
-    --primary-color-section: rgba(168, 116, 192, 0.322);
+    --primary-color: rgb(158, 158, 158);
+    --primary-color-dark: rgb(146, 146, 146);
+    --primary-color-section: rgba(39, 39, 39, 0.322);
 }
 
 * {
