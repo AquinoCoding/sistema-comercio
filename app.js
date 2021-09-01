@@ -12,7 +12,10 @@ const rotaMenu = require('./routes/menu');
 const rotaCadastro = require('./routes/cadastro');
 const rotaController = require('./routes/controller');
 const rotaIndex = require('./routes/index');
-
+const rotaCadEmpre = require('./routes/cadempre');
+const rotaCadCliente = require('./routes/cadcliente');
+const rotaCadProduto = require('./routes/cadproduto');
+const rotaFazerPedido = require('./routes/fazerpedido');
 
 // Constante de uso EXPRESS
 const app = express();
@@ -36,6 +39,10 @@ app.use('/auth', rotaCadastro);
 app.use('/menu', rotaMenu);
 app.use('/controllers', rotaController);
 app.use('/', rotaIndex);
+app.use('/cadastro-empresa', rotaCadEmpre);
+app.use('/cadastro-cliente', rotaCadCliente);
+app.use('/cadastro-produto', rotaCadProduto);
+app.use('/fazer-pedido', rotaFazerPedido);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
